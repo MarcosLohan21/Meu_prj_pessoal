@@ -1,0 +1,248 @@
+.cab {
+    display: flex;
+    background-color: rgb(0, 106, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo {
+    display: inline-block;
+    padding: 20px;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.itemslg {
+    display: inline-block;
+}
+
+.botaolg {
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 100px;
+    box-shadow: rgba(72, 79, 95, 0.06) 0px 2.25px 10.5px;
+    color: rgb(0, 106, 255);
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    height: 48px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin: 0px;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 14px 20px;
+    position: relative;
+    text-align: center;
+    transition: all 0.2s ease 0s;
+    width: 180px;
+}
+
+.botaolg:hover {
+    background-color: rgb(0, 140, 255);
+    color: rgb(255, 255, 255);
+}
+
+.botaoit {
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 100px;
+    box-shadow: rgba(72, 79, 95, 0.06) 0px 2.25px 10.5px;
+    color: rgb(0, 106, 255);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    height: 48px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    transition: all 0.2s ease 0s;
+    width: 150px;
+}
+
+.botaoit:hover {
+    background-color: rgb(0, 140, 255);
+    color: rgb(255, 255, 255);
+}
+
+.botaorg {
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: rgb(0, 83, 199);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 100px;
+    box-shadow: rgba(72, 79, 95, 0.06) 0px 2.25px 10.5px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    height: 48px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin: 0px;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 14px 30px;
+    position: relative;
+    text-align: center;
+    transition: all 0.2s ease 0s;
+    width: 180px;
+}
+
+.botaorg:hover {
+    background-color: transparent; /* Nova cor quando hover */
+    color: #fff;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88vh; /* Ajuste a altura conforme necessário */
+    
+}
+
+.form-content {
+    text-align: center;
+    margin-right: 20px; /* Espaçamento entre o formulário e a imagem */
+}
+
+
+
+.image-content img {
+    width: 600px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+    filter: opacity(50%);
+    margin-left: 160px;
+}
+
+body {
+    background: linear-gradient(to bottom, rgb(0, 95, 255), rgb(95, 204, 255));
+}
+
+.main__as {
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 100px;
+    box-shadow: rgba(72, 79, 95, 0.06) 0px 2.25px 10.5px;
+    color: rgb(0, 106, 255);
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    height: 48px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin: 0px;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 14px 20px;
+    position: relative;
+    text-align: center;
+    transition: all 0.2s ease 0s;
+    width: 180px;
+}
+
+.main__fr {
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    border-radius: 100px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    height: 48px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin: 0px;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 14px 20px;
+    position: relative;
+    text-align: center;
+    transition: all 0.2s ease 0s;
+    width: 180px;
+    position: absolute;
+    top: 600px;
+    left: 316px;
+}
+
+.main__as:hover {
+    background-color: rgb(0, 140, 255);
+    color: rgb(255, 255, 255);
+}
+
+input[type="text"] {
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 100px;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #333;
+    width: 250px; /* Ajuste a largura conforme necessário */
+    transition: transform 0.3s ease;
+}
+
+input[type="text"]:focus {
+    outline: none; /* Remove o contorno padrão ao focar */
+    border-color: rgb(255, 255, 255); /* Altera a cor da borda quando em foco */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Adiciona uma sombra ao redor */
+    transform: scale(1.05);
+}
+
+input[type="text"]::placeholder {
+    color: rgb(255, 255, 255); /* Cor desejada para o placeholder */
+}
+
+.search-box img{
+    position: absolute;
+    top: 57%;
+    right: 1085px;
+    transform: translateY(-50%);
+    color: #999; /* Cor do ícone */
+    filter: invert(100%);
+}
+
+.bgtop {
+    border-top: 2px solid rgba(201, 201, 201, 0.651) ;
+    background-color: #fff;
+    padding-bottom: 400px ;
+}
