@@ -13,6 +13,7 @@
 .logo {
     display: inline-block;
     padding: 20px;
+    animation: moveImage2 3s ease forwards;
 }
 
 .logo img {
@@ -21,6 +22,7 @@
     border-radius: 10px;
     padding: 5px;
     background-color: rgb(255, 255, 255);
+    
 }
 
 
@@ -145,7 +147,10 @@
 }
 
 body {
-    background: linear-gradient(to bottom, rgb(0, 95, 255), rgb(95, 204, 255));
+    background: linear-gradient(to bottom, rgb(0, 98, 255), rgb(95, 204, 255));
+    height: 180vh;
+    overflow-x: hidden;
+
 }
 
 .main__as {
@@ -195,13 +200,12 @@ body {
     max-width: 100%;
     overflow: hidden;
     padding: 14px 20px;
-    position: relative;
     text-align: center;
     transition: all 0.2s ease 0s;
     width: 180px;
-    position: absolute;
-    top: 600px;
-    left: 316px;
+    position: static;
+    padding-top: 40px;
+    margin-left: -180px;
 }
 
 .main__as:hover {
@@ -210,15 +214,21 @@ body {
 }
 
 input[type="text"] {
-    padding: 10px;
+    padding: 20px;
     background-color: transparent;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 100px;
+    margin-top: 50px;
     margin-left: 20px;
     font-size: 16px;
     color: #333;
     width: 250px; /* Ajuste a largura conforme necessário */
     transition: transform 0.3s ease;
+    background-image: url('./../img/lupa.png'); /* URL da imagem */
+    background-repeat: no-repeat;
+    background-position: calc(100% - 15px) 50%; /* Posiciona a imagem dentro do input */
+    background-size: 24px; /* Tamanho da imagem */
+    
 }
 
 input[type="text"]:focus {
@@ -226,23 +236,75 @@ input[type="text"]:focus {
     border-color: rgb(255, 255, 255); /* Altera a cor da borda quando em foco */
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Adiciona uma sombra ao redor */
     transform: scale(1.05);
+
+
 }
 
 input[type="text"]::placeholder {
     color: rgb(255, 255, 255); /* Cor desejada para o placeholder */
 }
 
-.search-box img{
-    position: absolute;
-    top: 57%;
-    right: 1085px;
-    transform: translateY(-50%);
-    color: #999; /* Cor do ícone */
-    filter: invert(100%);
-}
+
 
 .bgtop {
-    border-top: 2px solid rgba(201, 201, 201, 0.651) ;
-    background-color: #fff;
-    padding-bottom: 400px ;
+    background-color: rgb(0, 140, 255);
+    padding: 20px -1px 0px 20px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-weight: 540;
+    display: flex;
+    
+}
+
+.bgtop .text {
+    width: 50%;
+    padding: 20px;
+    line-height: 1.1;
+}
+
+.bgtop .moto {
+    margin: 100px 0px 100px 190px;
+    background-color: rgba(95, 204, 255, 0.671);
+    border-radius: 50%;
+    box-shadow: rgba(95, 204, 255, 0.671) 0px 2.25px 10.5px;
+    animation: moveImage 3s ease forwards;
+}
+
+
+
+.motoboy{
+    width: 500px;
+    margin-top: 70px;
+    height: auto;
+    filter: opacity(70%);
+}
+
+.til {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.subtil {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+@keyframes moveImage {
+    from {
+    transform: translateX(100%);
+    }
+    to {
+    transform: translateX(0);
+    }
+}
+
+@keyframes moveImage2 {
+    from {
+    transform: translateX(-260px);
+    }
+    to {
+    transform: translateX(10%);
+    }
 }
